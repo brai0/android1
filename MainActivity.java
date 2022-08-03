@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(v -> {
             Intent intent= new Intent(MainActivity.this,SecondActivity.class);
             Toast.makeText(this, "New Activity", Toast.LENGTH_SHORT).show();
+            startActivity(intent);
         });
 
     }
